@@ -1,7 +1,7 @@
 import express from 'express';
-import studentsRouter from './students.js';
+import studentRouters from './students.js';
 
 const routers = express.Router();
-routers.use('/students', studentsRouter);
+routers.use('/students', studentRouters);
 
 export default routers;
