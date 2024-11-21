@@ -1,5 +1,4 @@
 import { createStudent } from '../../services/students/createStudent.js';
-
 export const createStudentCtrl = async (req, res) => {
   const student = await createStudent(req.body);
 
