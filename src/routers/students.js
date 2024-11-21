@@ -8,7 +8,7 @@ studentsRouter.get('/', ctrlWrapper(studentsCtrls.getAllStudentsCtrl));
 studentsRouter.get('/:id', ctrlWrapper(studentsCtrls.getStudentByIdCtrl));
 studentsRouter.post('/', ctrlWrapper(studentsCtrls.createStudentCtrl));
 studentsRouter.delete('/:id', ctrlWrapper(studentsCtrls.deleteStudentCtrl));
-// studentsRouter.put('/:id', ctrlWrapper(studentsCtrls.upsertContactCtrl));
+studentsRouter.put('/:id', ctrlWrapper(studentsCtrls.upsertStudentCtrl));
 // studentsRouter.patch(':id', ctrlWrapper(studentsCtrls.patchContactCtrl));
 
 export default studentsRouter;
