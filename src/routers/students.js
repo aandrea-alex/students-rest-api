@@ -7,8 +7,8 @@ const studentsRouter = Router();
 studentsRouter.get('/', ctrlWrapper(studentsCtrls.getAllStudentsCtrl));
 studentsRouter.get('/:id', ctrlWrapper(studentsCtrls.getStudentByIdCtrl));
 studentsRouter.post('/', ctrlWrapper(studentsCtrls.createStudentCtrl));
-// contactsRouter.delete('/contacts/:id', ctrlWrapper(deleteContactCtrl));
-// contactsRouter.put('/contacts/:id', ctrlWrapper(upsertContactCtrl));
-// contactsRouter.patch('/contacts/:id', ctrlWrapper(patchContactCtrl));
+studentsRouter.delete('/:id', ctrlWrapper(studentsCtrls.deleteStudentCtrl));
+// studentsRouter.put('/:id', ctrlWrapper(studentsCtrls.upsertContactCtrl));
+// studentsRouter.patch(':id', ctrlWrapper(studentsCtrls.patchContactCtrl));
 
 export default studentsRouter;
