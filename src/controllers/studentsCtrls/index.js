@@ -3,6 +3,7 @@ import { getStudentByIdCtrl } from './getStudentByIdCtrl.js';
 import { createStudentCtrl } from './createStudentCtrl.js';
 import { deleteStudentCtrl } from './deleteStudentCtrl.js';
 import { upsertStudentCtrl } from './upsertStudentCtrl.js';
+import { patchStudentCtrl } from './patchStudentCtrl.js';
 
 export default {
   getAllStudentsCtrl,
@@ -10,4 +11,5 @@ export default {
   createStudentCtrl,
   deleteStudentCtrl,
   upsertStudentCtrl,
+  patchStudentCtrl,
 };
