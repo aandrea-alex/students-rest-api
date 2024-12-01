@@ -18,4 +18,6 @@ router.post(
   ctrlWrapper(authCtrls.loginUserCtrl),
 );
 
+router.post('/logout', ctrlWrapper(authCtrls.logoutUserCtrl));
+
 export default router;
