@@ -45,15 +45,6 @@ export const getAllStudents = async ({
     .sort({ [sortBy]: sortOrder })
     .exec();
 
-  // const [studentsCount, students] = await Promise.all([
-  //   StudentsCollection.find().merge(studentsQuery).countDocuments(),
-  //   studentsQuery
-  //     .skip(skip)
-  //     .limit(limit)
-  //     .sort({ [sortBy]: sortOrder })
-  //     .exec(),
-  // ]);
-
   const paginationData = calculatePaginationData(studentsCount, perPage, page);
 
   return {
