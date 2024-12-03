@@ -22,6 +22,7 @@ router.get(
   checkRoles(ROLES.TEACHER),
   ctrlWrapper(studentsCtrls.getAllStudentsCtrl),
 );
+
 router.get(
   '/:id',
   isValidId,

@@ -1,9 +1,11 @@
+import { GENDER } from '../constants/index.js';
+
 const parseGender = (gender) => {
   const isString = typeof gender === 'string';
   if (!isString) return;
-  const isGender = (gender) => ['male', 'female', 'other'].includes(gender);
 
-  if (isGender(gender)) return gender;
+  const validGenders = Object.values(GENDER);
+  return validGenders.includes(gender) ? gender : undefined;
 };
 
 const parseNumber = (number) => {

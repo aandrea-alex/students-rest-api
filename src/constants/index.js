@@ -3,6 +3,12 @@ export const SORT_ORDER = {
   DESC: 'desc',
 };
 
+export const GENDER = {
+  MALE: 'male',
+  FEMALE: 'feamle',
+  OTHER: 'other',
+};
+
 export const ROLES = {
   TEACHER: 'teacher',
   PARENT: 'parent',

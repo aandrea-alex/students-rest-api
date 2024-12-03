@@ -18,14 +18,14 @@ export const checkRoles =
     }
 
     if (roles.includes(ROLES.PARENT) && role === ROLES.PARENT) {
-      const { studentId } = req.params;
-      if (!studentId) {
+      const { id } = req.params;
+      if (!id) {
         next(createHttpError(403));
         return;
       }
 
       const student = await StudentsCollection.findOne({
-        _id: studentId,
+        _id: id,
         parentId: user._id,
       });
 
